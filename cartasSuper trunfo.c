@@ -2,102 +2,139 @@
 
 int main(){
 
+// variaveis da primeira cidade
 
- int carta= 1;
-    char nome_da_cidade[30]= "Fortaleza";
-    char estado [10]= "CE";
-    char codigo[25]="A01";
-    int populacao=9873;
-    float area=561.9;
-    float PIB=3.2;
-    int numero_de_pontos_turisticos=5;
+int populaçao=4567;
+int numero_de_pontos_turiaticos= 5;
+char estado[5]= "sp";
+char codigo[4]="a01";
+char nome_da_cidade[8]="santos";
+float area = 234.4;
+float PIB= 3.2;
+float densidade_populacional= populaçao/area; //o resultado sera em float
+float PIB_per_capita= populaçao/PIB; //o resultado sera em float
 
+//variaveis da segunda cidade
 
-    int carta2= 2;
-    char nome_da_cidade2[30]= "maceio";
-    char estado2[20]="AL";
-    char codigo2[10]="B02";
-    int populacao2=86442;
-    float area2=123.3;
-    float PIB2=246.9;
-    int numero_de_pontos_turisticos2=10;
+int populaçao2=6551;
+int numero_de_pontos_turiaticos2= 3;        
+char estado2[6]=  "rj";
+char codigo2[4]="b02";
+char nome_da_cidade2[8]="niteroi";
+float area2 = 678.1;
+float PIB2= 2.3;
+float densidade_populacional2= populaçao2/area2;//o resultado sera em float
+float PIB_per_capita2= populaçao2/PIB; //o resultado sera em float
 
+// imprimindo os dados da primeira cidade
+printf("cidade 1\n");
 
-      // Área para entrada de dados
-     
-      printf("digite o numero da carta:");
-      scanf("%d", &carta);
+printf(" digite o estado:");
+scanf("%s", estado);
 
+printf(" digite o código:");    
+scanf("%s", codigo);
 
-      printf("digite o nome da cidade:");
-      scanf("%s", &nome_da_cidade);
+printf(" digite o nome da cidade:");
+scanf("%s", nome_da_cidade);
 
+printf(" digite a população:");
+scanf("%d", &populaçao);
 
-      printf("digite o estado:");
-      scanf("%s", &estado);
+printf("digie a area:");
+scanf("%f", &area);
 
+printf("digite o PIB:");
+scanf("%f", &PIB);
 
-      printf("digite o codigo:");
-      scanf("%s", &codigo);
-
-
-      printf("digite a populaçao:");
-      scanf(" %d", &populacao);
-
-
-      printf(" digite a area:");
-      scanf("%f", &area );
-
-
-      printf("digite o PIB:");
-      scanf("%f", &PIB);
+printf(" digite o número de pontos turísticos:");
+scanf("%d", &numero_de_pontos_turiaticos);
 
 
-      printf("digite o numero de pontos turisticos:");
-      scanf("%d", &numero_de_pontos_turisticos);
+printf("\n");
 
-      printf("digite o numero da carta:");
-      scanf("%d",&carta2);
+// imprimindo os dados da segunda cidade 
+printf("cidade 2\n");
 
+printf(" digite o estado:");
+scanf("%s", estado2);
 
-      printf("digite o nome da cidade:");
-      scanf("%s", nome_da_cidade2);
+printf(" digite o código:");
+scanf("%s", codigo2);
 
+printf(" digite o nome da cidade:");
+scanf("%s", nome_da_cidade2);
 
-      printf("digite o estado:");
-      scanf("%s", estado2);
+printf(" digite a população:");
+scanf("%d", &populaçao2);
 
+printf("digie a area:");
+scanf("%f", &area2);
 
-      printf("digite o codigo:");
-      scanf("%s", codigo2);
+printf("digite o PIB:");
+scanf("%f", &PIB2);
 
-
-      printf("digite a populaçao:");
-      scanf("%d", &populacao2);
-
-
-      printf(" digite a area:");
-      scanf("%f", &area2);
-
-
-      printf("digite o PIB:");
-      scanf("%f", &PIB2);
+printf(" digite o número de pontos turísticos:");
+scanf("%d", &numero_de_pontos_turiaticos2);
 
 
-      printf("digite o numero de pontos turisticos:");
-      scanf("%d", &numero_de_pontos_turisticos2);
+// exibindos os dados das cidades 
+printf("\n");
+printf("estado: %s\n codigo: %s\n  nome_da_cidade: %s\n população: %d\n area: %.2f\n PIB: %.2f\n número de pontos turísticos: %d\n Densidade populacional: %.2f\n PIB per capita: %.2f\n", estado, codigo, nome_da_cidade, populaçao, area, PIB, numero_de_pontos_turiaticos, densidade_populacional, PIB_per_capita);
+
+printf("\n");
+
+printf("estado: %s\n codigo: %s\n  nome_da_cidade: %s\n população: %d \n area: %.2f\n PIB: %.2f\n número de pontos turísticos: %d\n Densidade populacional: %.2f\n PIB per capita: %.2f\n", estado2, codigo2, nome_da_cidade2, populaçao2, area2, PIB2, numero_de_pontos_turiaticos2, densidade_populacional2, PIB_per_capita2);
+ 
+printf("\n");
+//comparaçao dos atributos
+
+if (estado > estado2){
+printf("carta1 venceu!\n");
+}else{ 
+    printf("carta2 venceu!\n");
+}
+
+if (populaçao > populaçao2){
+    printf("carta1 venceu!\n");
+}else{
+    printf("carta2 venceu!\n");
+}
+
+if (area > area2){
+    printf("carta1 venceu!\n");
+}else{ 
+    printf("carta2 venceu!\n");
+}
+
+if (PIB > PIB2){
+    printf("carta1 venceu!\n");
+}else{
+    printf("carta2 venceu!\n");
+}
+if (numero_de_pontos_turiaticos > numero_de_pontos_turiaticos2){
+    printf("carta1 venceu!\n");
+}else{
+    printf("carta2 venceu!\n");
+}
+if (PIB_per_capita > PIB_per_capita2){
+    printf("carta1 venceu!\n");
+}else{
+    printf("carta2 venceu!\n");
+}
+
+if (densidade_populacional < densidade_populacional2){
+    printf("carta1 venceu!\n");
+}else {
+    printf("carta2 venceu!\n");
+}
 
 
-        // Área para exibição dos dados da cidade
-     
-      printf("carta: %d\n nome_da_cidade: %s\n estado: %s\n codigo: %s\n populacao: %d\n area: %.2f\n PIB: %.2f\n numero_de_pontos_turisticos: %d\n", carta, nome_da_cidade, estado, codigo, populacao, area, PIB, numero_de_pontos_turisticos);      
-     
-      printf("carta2: %d\n nome_da_cidade2: %s\n estado2: %s\n codigo2: %s\n populacao2: %d\n area2: %.2f\n PIB2: %.2f\n numero_de_pontos_turisticos2: %d\n", carta, nome_da_cidade, estado, codigo, populacao, area, PIB, numero_de_pontos_turisticos);
 
 
+return 0;
 
-
-  return 0;
+}
 
 
 
@@ -110,4 +147,4 @@ int main(){
 
 
     
-}
+
