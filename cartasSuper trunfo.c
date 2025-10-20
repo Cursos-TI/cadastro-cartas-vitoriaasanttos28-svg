@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include <stdlab.h>
 
 int main(){
+
+ int escolhadojogador1, escolhadojogador2;
 
 // variaveis da primeira cidade
 
@@ -87,46 +90,62 @@ printf("\n");
 printf("estado: %s\n codigo: %s\n  nome_da_cidade: %s\n população: %d \n area: %.2f\n PIB: %.2f\n número de pontos turísticos: %d\n Densidade populacional: %.2f\n PIB per capita: %.2f\n", estado2, codigo2, nome_da_cidade2, populaçao2, area2, PIB2, numero_de_pontos_turiaticos2, densidade_populacional2, PIB_per_capita2);
  
 printf("\n");
+
 //comparaçao dos atributos
 
 if (estado > estado2){
 printf("carta1 venceu!\n");
-}else{ 
+}else if ("estado < estado2"){
     printf("carta2 venceu!\n");
+}else{
+  printf("houve um empate!\n");
 }
 
 if (populaçao > populaçao2){
     printf("carta1 venceu!\n");
-}else{
+}else if ("populaçao < populaçao2"){
     printf("carta2 venceu!\n");
+}else {
+  printf("houve um empate!\n");
 }
 
 if (area > area2){
     printf("carta1 venceu!\n");
-}else{ 
+}else if ("area < area2"){
     printf("carta2 venceu!\n");
+}else{
+  printf("houve um empate!\n");
 }
 
 if (PIB > PIB2){
     printf("carta1 venceu!\n");
-}else{
+}else if ("PIB < PIB2"){
     printf("carta2 venceu!\n");
+}else {
+  printf("houve um empate!\n");
 }
+
 if (numero_de_pontos_turiaticos > numero_de_pontos_turiaticos2){
     printf("carta1 venceu!\n");
-}else{
+}else if ("numero_de_pontos_turisticos < numero_de_pontos_turisticos2"){
     printf("carta2 venceu!\n");
+}else {
+  printf("houve um empate!\n");
 }
 if (PIB_per_capita > PIB_per_capita2){
     printf("carta1 venceu!\n");
-}else{
+}else if ("PIB_per_capita < PIB_per_capita2"){
     printf("carta2 venceu!\n");
+}else{
+  printf("houve um empate!\n");
 }
 
 if (densidade_populacional < densidade_populacional2){
     printf("carta1 venceu!\n");
-}else {
+}else if("densidade_populacional > densidade_populacional2"){
     printf("carta2 venceu!\n");
+}else {
+  printf("houve um empate!\n");
 }
 
 
